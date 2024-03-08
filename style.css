@@ -9,6 +9,7 @@
 body {
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    padding-top: 50px;
 }
 .tour-containter {
     margin-right: 30px;
@@ -49,9 +50,14 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .rating {
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+}
+.star {
+    line-height: 192.857%;
 }
 .rating-amount,
 .duaration-period {
@@ -60,6 +66,9 @@ body {
     font-style: normal;
     line-height: 192.857%;
     color: #3b3e44;
+}
+.rating-amount {
+    margin-left: 11px;
 }
 .tour-cost {
     color: #f4f5f6;
