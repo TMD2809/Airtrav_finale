@@ -1,3 +1,25 @@
+mixin tour-item 
+                .tour-item
+                    .tour-image-content
+                        img.tour-image(src='./Img/Img1.png', alt='')
+                        span.tour-amount From $40
+                    .tour-content
+                        h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok
+                        .tour-rating
+                            .rating
+                                div
+                                    img.star(src='./Img/Shape.png', alt='')
+                                div
+                                    span.rating-amount 4.8 (12 reviews)
+                            .tour-duaration
+                                span.duaration-period Duration: 9 hours
+                        div
+                            a.tour-cost(href='') Tours Price $61
+
+
+
+
+
 doctype html
 html(lang="en")
     head
@@ -15,51 +37,6 @@ html(lang="en")
     body
         .tour-container
             .tour-list
-                .tour-item
-                    .tour-image-content
-                        img.tour-image(src='./Img/Img1.png', alt='')
-                        span.tour-amount From $40
-                    .tour-content
-                        h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok
-                        .tour-rating
-                            .rating
-                                div
-                                    img.star(src='./Img/Shape.png', alt='')
-                                div
-                                    span.rating-amount 4.8 (12 reviews)
-                            .tour-duaration
-                                span.duaration-period Duration: 9 hours
-                        div
-                            a.tour-cost(href='') Tours Price $61
-                .tour-item
-                    .tour-image-content
-                        img.tour-image(src='./Img/Img1.png', alt='')
-                        span.tour-amount From $40
-                    .tour-content
-                        h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok
-                        .tour-rating
-                            .rating
-                                div
-                                    img.star(src='./Img/Shape.png', alt='')
-                                div
-                                    span.rating-amount 4.8 (12 reviews)
-                            .tour-duaration
-                                span.duaration-period Duration: 9 hours
-                        div
-                            a.tour-cost(href='') Tours Price $61
-                .tour-item
-                    .tour-image-content
-                        img.tour-image(src='./Img/Img1.png', alt='')
-                        span.tour-amount From $40
-                    .tour-content
-                        h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok
-                        .tour-rating
-                            .rating
-                                div
-                                    img.star(src='./Img/Shape.png', alt='')
-                                div
-                                    span.rating-amount 4.8 (12 reviews)
-                            .tour-duaration
-                                span.duaration-period Duration: 9 hours
-                        div
-                            a.tour-cost(href='') Tours Price $61
+                +tour-item
+                +tour-item
+                +tour-item
