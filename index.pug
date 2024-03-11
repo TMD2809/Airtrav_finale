@@ -1,24 +1,21 @@
-mixin tour-item 
+mixin tour-item(image, priceRange, title, amountReview, time, tourPrice ) 
                 .tour-item
                     .tour-image-content
-                        img.tour-image(src='./Img/Img1.png', alt='')
-                        span.tour-amount From $40
+                        img.tour-image(src= image, alt='')
+                        span.tour-amount From #{priceRange}
                     .tour-content
-                        h3.tour-title Thailands Ayutthaya Temples Cruise from Bangkok
+                        h3.tour-title= title 
                         .tour-rating
                             .rating
                                 div
                                     img.star(src='./Img/Shape.png', alt='')
                                 div
-                                    span.rating-amount 4.8 (12 reviews)
+                                    span.rating-amount=amountReview 
+                                        |   (12 reviews)
                             .tour-duaration
-                                span.duaration-period Duration: 9 hours
+                                span.duaration-period Duration: #{time} hours
                         div
-                            a.tour-cost(href='') Tours Price $61
-
-
-
-
+                            a.tour-cost(href='') Tours Price $#{tourPrice}
 
 doctype html
 html(lang="en")
@@ -37,6 +34,6 @@ html(lang="en")
     body
         .tour-container
             .tour-list
-                +tour-item
-                +tour-item
-                +tour-item
+                +tour-item("./Img/Img1.png","$40", "Thailands Ayutthaya Temples Cruise from Bangkok",4.8, 9, 61)
+                +tour-item("./Img/Img2.png","$60", "FLoating Markets Day Trip from Bangkok",3.8, 5, 90)
+                +tour-item("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
