@@ -21,7 +21,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
-.tour-item {
+.tour {
     width: calc(100% / 3 - 30px);
     height: auto;
     border-radius: 10px;
