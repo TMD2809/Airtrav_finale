@@ -11,6 +11,17 @@ body {
     font-weight: 500;
     padding-top: 50px;
 }
+.top-tour {
+    width: 1170px;
+    color: #353945;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: calc(45 / 30);
+    margin-left: 30px;
+    margin: 0 auto 34px;
+}
 .tour-list {
     display: flex;
     flex-wrap: wrap;
@@ -100,6 +111,14 @@ body {
 @media screen and (max-width: 767.98px) {
     body {
         margin: 0 24px;
+    }
+    .top-tour {
+        color: #fff;
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 45px; /* 150% */
     }
     .tour-list {
         row-gap: 20px;
