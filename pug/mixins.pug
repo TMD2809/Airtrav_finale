@@ -1,18 +1,13 @@
-mixin tourItem(image, priceRange, title, amountReview, time, tourPrice ) 
-                .tour-item
-                    .tour-image-content
-                        img.tour-image(src= image, alt='')
-                        span.tour-amount From #{priceRange}
-                    .tour-content
-                        h3.tour-title= title 
-                        .tour-rating
-                            .rating
-                                div
-                                    img.star(src='./Img/Shape.png', alt='')
-                                div
-                                    span.rating-amount=amountReview 
-                                        |   (12 reviews)
-                            .tour-duration
-                                span.duration-period Duration: #{time} hours
-                        div
-                            a.tour-cost(href='') Tours Price $#{tourPrice}
+mixin popularItem(image, priceRange, title, amountReview, time, tourPrice ) 
+                .popular-item
+                    .popular-image-content 
+                        img.poplar-image(src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/62/2016/11/07083553/Destination-Grand_Palace_Bangkok.jpg")
+                        div 
+                            a(href="", target="_blank", rel="noopener noreferrer") Must See
+                    .popular-content 
+                        span.popular-time Sep 28 10:00 AM - 1:00 PM
+                        h3.popular-title The Grand Palace
+                        .popular-rating     
+                            img.rating-star(src="../Img/Shape.png", alt="", srcset="")
+                            span.popular-rating-amount 4.8 (12 reviews)
+                    
