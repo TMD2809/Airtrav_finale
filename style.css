@@ -96,4 +96,5 @@ body {
     background-color: #3b71fe;
     border-radius: 8px;
     text-decoration: none;
+    display: inline-block;
 }
