@@ -107,6 +107,12 @@ body {
     .tour-item {
         width: 100%;
     }
+    .tour-image {
+        height: 211px;
+    }
+    .tour-content {
+        padding: 17px 17px 9px;
+    }
     .tour-title {
         font-size: 16px;
         line-height: calc(24 / 16);
