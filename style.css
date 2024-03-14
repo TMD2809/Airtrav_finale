@@ -6,6 +6,10 @@
     font-size: 100%;
     vertical-align: baseline;
 }
+img {
+    display: block;
+    max-width: 100%;
+}
 body {
     font-family: "Inter", sans-serif;
     font-weight: 500;
@@ -80,17 +84,23 @@ body {
 }
 .rating {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 .star {
-    line-height: 192.857%;
+    line-height: calc(27 / 14);
 }
-.rating-amount,
+.rating-amount {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: calc(27 / 14);
+    color: #3b3e44;
+}
 .duration-period {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
-    line-height: 192.857%;
+    line-height: calc(27 / 14);
     color: #3b3e44;
 }
 .rating-amount {
