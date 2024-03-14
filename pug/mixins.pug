@@ -1,18 +1,18 @@
 mixin tourItem(image, priceRange, title, amountReview, time, tourPrice ) 
-                    .tour-item
-                        .tour-image-content
-                            img.tour-image(src= image, alt='')
-                            span.tour-amount From #{priceRange}
-                        .tour-content
-                            h3.tour-title= title 
-                            .tour-rating
-                                .rating
-                                    div
-                                        img.star(src='./Img/Shape.png', alt='')
-                                    div
-                                        span.rating-amount=amountReview 
-                                            |   (12 reviews)
-                                .tour-duration
-                                    span.duration-period Duration: #{time} hours
-                            div
-                                a.tour-cost(href='') Tours Price $#{tourPrice}
+                .tour-item
+                    .tour-image-content
+                        img.tour-image(src= image, alt='')
+                        span.tour-amount From #{priceRange}
+                    .tour-content
+                        h3.tour-title= title 
+                        .tour-rating
+                            .rating
+                                div
+                                    img.star(src='./Img/Shape.png', alt='')
+                                div
+                                    span.rating-amount=amountReview 
+                                        |   (12 reviews)
+                            .tour-duration
+                                span.duration-period Duration: #{time} hours
+                        div
+                            a.tour-cost(href='') Tours Price $#{tourPrice}

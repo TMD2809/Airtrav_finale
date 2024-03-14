@@ -13,6 +13,7 @@ img {
 body {
     font-family: "Inter", sans-serif;
     font-weight: 500;
+    font-style: normal;
     padding-top: 50px;
 }
 .top-tour {
@@ -30,43 +31,47 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100%; /* ||make sure all the ele has full width */
+}
+.popular-container {
     max-width: 1170px;
     margin: 0 auto;
-    column-gap: 30px;
 }
-.tour-item {
-    width: calc(100% / 3 - 20px);
-    height: auto;
-    border-radius: 10px;
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+.popular-item {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    border-radius: 14px;
     background: #fff;
     box-shadow: 0px 12px 64px 0px rgba(0, 0, 0, 0.06);
-    /* margin-left: 30px; */ /*||using column-gap instead this*/
 }
-.tour-image-content {
+.popular-image-content {
+    height: 185px;
     position: relative;
 }
-.tour-image {
-    width: 100%;
-    height: 239px;
+.popular-image {
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
 }
-.tour-amount {
-    color: #fcfcfd;
-    font-size: 12px;
-    font-style: normal;
-    padding: 5px 16px;
-    border-radius: 4px;
-    opacity: 0.8;
-    background: #353945;
-    display: inline-block;
+.popular-gradient {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    background: linear-gradient(
+        24deg,
+        rgba(4, 4, 4, 0.52) 0.23%,
+        rgba(4, 4, 4, 0) 55.52%
+    );
     position: absolute;
-    top: 24px;
-    left: 30px;
+    bottom: 0;
 }
-.tour-content {
-    padding: 20px 20px 14px;
+.popular-mustSeeButton {
+    display: inline-block;
 }
 .tour-title {
     margin-bottom: 10px;
@@ -107,17 +112,55 @@ body {
     margin-left: 11px;
 }
 .tour-cost {
+}
+.popular-button {
+    display: inline-block;
     color: #f4f5f6;
-    font-size: 14px;
-    font-style: normal;
+    font-size: 12px;
     line-height: normal;
-    padding: 8px 17px;
-    background-color: #3b71fe;
-    border-radius: 8px;
     text-decoration: none;
     display: inline-block;
+    border-radius: 30px;
+    padding: 4px 18px;
+    background: #3b71fe;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    transform: translateY(50%);
 }
-
+.popular-content {
+    padding: 14px 20px 11px;
+}
+.popular-time {
+    color: #777e90;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+    display: block;
+}
+.popular-title {
+    color: #353945;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: inherit;
+    line-height: calc(28 / 18);
+}
+.popular-rating {
+    display: flex;
+    align-items: center;
+}
+.rating-star {
+    line-height: calc(21 / 12);
+    display: block;
+    margin-right: 4px;
+}
+.popular-rating-amount {
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: calc(21 / 12);
+}
 @media screen and (max-width: 767.98px) {
     body {
         margin: 0 24px;
