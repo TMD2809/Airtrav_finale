@@ -10,6 +10,9 @@ img {
     display: block;
     max-width: 100%;
 }
+:root {
+    --var-name: value;
+}
 body {
     font-family: "Inter", sans-serif;
     font-weight: 500;
