@@ -12,9 +12,21 @@ body {
     font-style: normal;
     padding-top: 50px;
 }
+
 .popular-image {
     height: 185px;
     display: block;
+    position: absolute;
+    /* top: 185px; */
+}
+.popular-gradient {
+    height: 185px;
+    background: linear-gradient(
+        24deg,
+        rgba(4, 4, 4, 0.52) 0.23%,
+        rgba(4, 4, 4, 0) 55.52%
+    );
+    position: relative;
 }
 .popular-mustSeeButton {
     display: inline-block;
@@ -28,6 +40,9 @@ body {
     border-radius: 30px;
     padding: 4px 18px;
     background: #3b71fe;
+}
+.popular-content {
+    padding: 14px 20px 11px;
 }
 .popular-time {
     color: #777e90;
@@ -49,10 +64,12 @@ body {
     display: flex;
 }
 .rating-star {
-    display: block;
+    line-height: calc(21 / 12);
 }
 .popular-rating-amount {
-    display: block;
+    color: #4f4f4f;
+    font-size: 12px;
+    line-height: calc(21 / 12);
 }
 @media screen and (max-width: 767.98px) {
     body {
