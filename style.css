@@ -11,7 +11,20 @@ img {
     max-width: 100%;
 }
 :root {
-    --var-name: value;
+    /*|| COLOR PALETTE */
+    --var-primary-color-1: #3b71fe;
+    --var-blue-: #769cfe;
+    --var-blue-: #b1c6ff;
+    --var-blue-: #c4d4ff;
+    --var-blue-: #d8e3ff;
+    --var-blue-: #d8e3ff;
+    --var-primary-color-2: #141416;
+    --var-gray-1: #23262f;
+    --var-gray-2: #353945;
+    --var-gray-3: #777e90;
+    --var-gray-4: #b1b5c3;
+    --var-gray-5: #e6e8ec;
+    --var-gray-6: #f4f5f6;
 }
 body {
     font-family: "Inter", sans-serif;
@@ -26,7 +39,7 @@ body {
 }
 .mainTitle {
     width: 100%;
-    color: #353945;
+    color: var(--var-gray-2);
     font-family: Inter;
     font-size: 30px;
     font-style: normal;
@@ -83,7 +96,7 @@ body {
     font-style: normal;
     font-weight: inherit;
     line-height: 155.556%;
-    color: #23262f;
+    color: var(--var-gray-1);
 }
 .tour-rating {
     margin-bottom: 20px;
@@ -103,64 +116,27 @@ body {
     font-size: 14px;
     font-style: normal;
     line-height: calc(27 / 14);
-    color: #3b3e44;
+    color: var(--var-gray-2);
 }
 .duration-period {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;
     line-height: calc(27 / 14);
-    color: #3b3e44;
+    color: var(--var-gray-2);
 }
 .rating-amount {
     margin-left: 11px;
 }
 .tour-cost {
-    color: #f4f5f6;
+    color: var(--var-gray-6);
     font-size: 14px;
     font-style: normal;
     line-height: normal;
     padding: 8px 17px;
-    background-color: #3b71fe;
+    background-color: var(--var-primary-color-1);
     border-radius: 8px;
     text-decoration: none;
-    display: inline-block;
-}
-.popular-list {
-    margin-left: -30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.popular-item {
-    width: calc(25% - 30px);
-    margin-left: 30px;
-    border-radius: 14px;
-    background: #fff;
-    box-shadow: 0px 12px 64px 0px rgba(0, 0, 0, 0.06);
-}
-.popular-image-content {
-    height: 185px;
-    position: relative;
-}
-.popular-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 14px 14px 0 0;
-}
-.popular-gradient {
-    height: 100%;
-    width: 100%;
-    border-radius: 14px 14px 0 0;
-    background: linear-gradient(
-        24deg,
-        rgba(4, 4, 4, 0.52) 0.23%,
-        rgba(4, 4, 4, 0) 55.52%
-    );
-    position: absolute;
-    bottom: 0;
-}
-.popular-mustSeeButton {
     display: inline-block;
 }
 .tour-title {
@@ -201,16 +177,50 @@ body {
 .rating-amount {
     margin-left: 11px;
 }
+.popular-list {
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular-item {
+    width: calc(25% - 30px);
+    margin-left: 30px;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0px 12px 64px 0px rgba(0, 0, 0, 0.06);
+}
+.popular-image-content {
+    height: 185px;
+    position: relative;
+}
+.popular-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
+}
+.popular-gradient {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    background: linear-gradient(
+        24deg,
+        rgba(4, 4, 4, 0.52) 0.23%,
+        rgba(4, 4, 4, 0) 55.52%
+    );
+    position: absolute;
+    bottom: 0;
+}
 .popular-button {
     display: inline-block;
-    color: #f4f5f6;
+    color: var(--var-gray-6);
     font-size: 12px;
     line-height: normal;
     text-decoration: none;
     display: inline-block;
     border-radius: 30px;
     padding: 4px 18px;
-    background: #3b71fe;
+    background: var(--var-primary-color-1);
     position: absolute;
     right: 20px;
     bottom: 0;
@@ -220,7 +230,7 @@ body {
     padding: 14px 20px 11px;
 }
 .popular-time {
-    color: #777e90;
+    color: var(--var-gray-3);
     font-family: Inter;
     font-size: 9px;
     font-weight: 400;
@@ -229,7 +239,7 @@ body {
     display: block;
 }
 .popular-title {
-    color: #353945;
+    color: var(--var-gray-2);
     font-family: Inter;
     font-size: 18px;
     font-weight: inherit;
@@ -245,7 +255,7 @@ body {
     margin-right: 4px;
 }
 .popular-rating-amount {
-    color: #4f4f4f;
+    color: var(--var-gray-2);
     font-size: 12px;
     line-height: calc(21 / 12);
 }
