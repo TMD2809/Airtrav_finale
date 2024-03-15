@@ -52,27 +52,43 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
+.hidden-item {
+}
 .hidden-image-content {
     padding: 12px;
-    border-radius: 14px;
     background: #fff;
+    border-radius: 14px;
     box-shadow: 0px 30px 110px 0px rgba(0, 0, 0, 0.08);
-    position: relative;
-    right: 20px;
-    /* left: 42px; */
+    /* position: relative; */
 }
 .hidden-image {
     height: 196px;
     width: 100%;
     border-radius: 13px;
+    position: relative;
+}
+.hidden-gradient {
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+    background: linear-gradient(
+        3deg,
+        rgba(0, 0, 0, 0.56) 22.88%,
+        rgba(0, 0, 0, 0) 58.17%
+    );
+    position: absolute;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
 }
 .hidden-content {
     position: absolute;
     bottom: 26px;
+    left: 42px;
 }
 .hidden-title {
     color: #fff;
-    color: black;
     font-size: 24px;
     font-weight: inherit;
     line-height: calc(36 / 24);
@@ -80,7 +96,6 @@ body {
 }
 .hidden-time {
     color: var(--var-gray-5);
-    color: black;
     font-size: 14px;
     line-height: calc(20 / 14);
 }
