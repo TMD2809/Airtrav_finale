@@ -13,16 +13,26 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
             rel="stylesheet")
     body
-        .container
-            h2.mainTitle Top Bangkok Tours 
-            .tour-list
-                +tourItem("./Img/Img1.png","$40", "Thailands Ayutthaya Temples Cruise from Bangkok",4.8, 9, 61)
-                +tourItem("./Img/Img2.png","$60", "FLoating Markets Day Trip from Bangkok",3.8, 5, 90)
-                +tourItem("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
-        .container
-            h2.mainTitle Popular things to do in Bangkok
-            .popular-list
-                +popularItem("./Img/Grand_Palace.jpg","Sep 28 12:00 AM - 1:00 PM","The Grand Palace")
-                +popularItem("./Img/Chatuchak-Weekend.jpg","Aug 28 1:00 AM - 19:00 PM","Chatuchak Weekend")
-                +popularItem("./Img/Wat-Pho.jpg","Jul 28 5:00 AM - 7:00 PM","Wat Pho")
-                +popularItem("./Img/Temple-Of-Dawn.jpg","Jan 28 10:00 AM - 1:00 PM","Temple Of Dawn")
+        section.topTour
+            .container
+                h2.mainTitle Top Bangkok Tours 
+                .tour-list
+                    +tourItem("./Img/Img1.png","$40", "Thailands Ayutthaya Temples Cruise from Bangkok",4.8, 9, 61)
+                    +tourItem("./Img/Img2.png","$60", "FLoating Markets Day Trip from Bangkok",3.8, 5, 90)
+                    +tourItem("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
+        section.popularThing
+            .container
+                h2.mainTitle Popular things to do in Bangkok
+                .popular-list
+                    +popularItem("./Img/Grand_Palace.jpg","Sep 28 12:00 AM - 1:00 PM","The Grand Palace")
+                    +popularItem("./Img/Chatuchak-Weekend.jpg","Aug 28 1:00 AM - 19:00 PM","Chatuchak Weekend")
+                    +popularItem("./Img/Wat-Pho.jpg","Jul 28 5:00 AM - 7:00 PM","Wat Pho")
+                    +popularItem("./Img/Temple-Of-Dawn.jpg","Jan 28 10:00 AM - 1:00 PM","Temple Of Dawn")
+        section.hiddenGem
+            .container
+                h2.mainTitle Hidden gems in Bangkok
+                .hidden-list
+                    +hiddenItem("./Img/Img1.png","$40", "Thailands Ayutthaya Temples Cruise from Bangkok",4.8, 9, 61)
+                    +hiddenItem("./Img/Img2.png","$60", "FLoating Markets Day Trip from Bangkok",3.8, 5, 90)
+                    +hiddenItem("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
+                    +hiddenItem("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
