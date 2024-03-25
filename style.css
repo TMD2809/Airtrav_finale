@@ -37,6 +37,17 @@ body {
     max-width: 1170px;
     margin: 0 auto 70px;
 }
+.hiddenGem .container {
+    text-align: center;
+}
+.hiddenGem h2.mainTitle {
+    display: inline-block;
+}
+.hidden-list {
+    max-width: 998px;
+    width: 100%;
+    margin: 0 auto;
+}
 .mainTitle {
     width: 100%;
     color: var(--var-gray-2);
