@@ -30,11 +30,11 @@ mixin popularItem(imgLink,time,title)
                                 img.rating-star(src="../Img/Shape.png")
                             div 
                                 span.popular-rating-amount 4.8 (12 reviews)
-mixin hiddenItem() 
+mixin hiddenItem(img,time) 
                 .hidden-item
                     .hidden-image-content
-                        img.hidden-image(src= "./Img/blue-morning-natural-mountains-bamboo.png", alt='')
+                        img.hidden-image(src=img, alt='')
                         .hidden-gradient
                     .hidden-content
                         h3.hidden-title Bangkok Trip
-                        span.hidden-time 27 Sep, 2020
+                        span.hidden-time=time

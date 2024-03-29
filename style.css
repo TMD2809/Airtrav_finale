@@ -270,6 +270,7 @@ body {
 }
 .hidden-content {
     position: absolute;
+    text-align: left;
     bottom: 26px;
     left: 42px;
 }
