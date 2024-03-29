@@ -5,6 +5,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Airtrav
+        <link rel="icon" type="image/x-icon" href="./Img/logo.png">
         link(rel="stylesheet" href="./style.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
         link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
@@ -32,7 +33,9 @@ html(lang="en")
             .container
                 h2.mainTitle Hidden gems in Bangkok
                 .hidden-list
-                    +hiddenItem("./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","28 Sep, 2020")
-                    +hiddenItem("./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","27 Sep, 2020")
-                    +hiddenItem("./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","7 Dec, 2020")
-                    +hiddenItem("./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg","16 Feb, 2020")
+                    //- +hiddenItem("./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","28 Sep, 2020")
+                    //- +hiddenItem("./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","27 Sep, 2020")
+                    //- +hiddenItem("./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","7 Dec, 2020")
+                    //- +hiddenItem("./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg","16 Feb, 2020")
+                    each img in ["./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg"]
+                        //- +hiddenItem(=img,"28 Sep, 2020")
