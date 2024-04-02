@@ -316,6 +316,9 @@ body {
         font-size: 20px;
         line-height: calc(28 / 20);
     }
+    .popularThing .mainTitle {
+        margin-bottom: 30px;
+    }
     .popular-item {
         width: 100%;
     }
@@ -325,5 +328,12 @@ body {
             rgba(4, 4, 4, 0.52) 0.23%,
             rgba(4, 4, 4, 0) 55.52%
         );
+    }
+    .hiddenGem .mainTitle {
+        margin-bottom: 20px;
+    }
+    .hidden-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
