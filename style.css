@@ -266,7 +266,7 @@ body {
 .hidden-title {
     color: #fff;
     font-size: 24px;
-    font-weight: inherit;
+    font-weight: 600px;
     line-height: calc(36 / 24);
     margin-bottom: 6px;
 }
@@ -274,6 +274,20 @@ body {
     color: var(--var-gray-5);
     font-size: 14px;
     line-height: calc(20 / 14);
+}
+.button {
+    width: fit-content;
+    margin: 70px auto;
+    font-size: 24px;
+    color: #fff;
+    line-height: calc(36 / 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 39px 9px 40px;
+    border-radius: 30px;
+    background: var(--var-primary-color-1);
+    text-decoration: none;
 }
 @media screen and (max-width: 767.98px) {
     body {
@@ -335,5 +349,14 @@ body {
     .hidden-list {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+    .hidden-title {
+        font-size: 16px;
+        line-height: calc(24 / 16);
+        margin-bottom: 4px;
+    }
+    .hidden-time {
+        font-size: 10px;
+        line-height: calc(13 / 10);
     }
 }
