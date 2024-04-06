@@ -39,7 +39,35 @@ html(lang="en")
                     +hiddenItem("./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","27 Sep, 2020")
                     +hiddenItem("./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","7 Dec, 2020")
                     +hiddenItem("./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg","16 Feb, 2020")
-                    //- each img in ["./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg"]
-                        //- +hiddenItem(=img,"28 Sep, 2020")
             a.button Explore All
-        footer
+        footer.footer
+            .footer-container 
+                .footer-top
+                    .footer-content
+                        a.footer-logo(href="#")
+                            img(srcset="./Img/logo1.png 2x")
+                        span.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
+                    .footer-content
+                        h4.footer-title Services
+                        ul.footer-list
+                            each items in ['Trip Planner','Tour Planning','Tour Guide','Tour Package','Tour advice']
+                                li.footer-item
+                                    a.footer-link(href="#")= items
+                    .footer-content 
+                        h4.footer-title Support
+                        ul.footer-list
+                            each items in ['Account','Legal','Contact','Terms & Condition','Privacy Policy']
+                                li.footer-item
+                                    a.footer-link(href='#')= items
+                    .footer-content 
+                        h4.footer-title Business
+                        ul.footer-list
+                            each items in ['Success','About Location','Blog','Information','Travel Guide']
+                                li.footer-item
+                                    a.footer-link(href='#')= items
+                .footer-divider
+                .footer-bottom
+                    .footer-copyRight Copyright© 2021 UIHUT LLC. All rights reserved
+                    .footer-social 
+                        each logo in ["./Img/facebook.png 2x","./Img/linkdlne.png 2x" ,"./Img/twitter.png 2x","./Img/instragram.png 2x"]
+                            img.footer-social-logo(srcset= logo)
