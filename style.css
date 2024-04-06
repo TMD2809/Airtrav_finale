@@ -266,7 +266,7 @@ body {
 .hidden-title {
     color: #fff;
     font-size: 24px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: calc(36 / 24);
     margin-bottom: 6px;
 }
@@ -288,6 +288,98 @@ body {
     border-radius: 30px;
     background: var(--var-primary-color-1);
     text-decoration: none;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.footer-container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-top {
+    width: 100%;
+    max-width: 1070px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.footer-content:first-child {
+    max-width: 286px;
+}
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.footer-desc {
+    display: inline-block;
+    color: var(--var-gray-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16);
+}
+.footer-title {
+    color: var(--var-gray-2);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(36 / 24);
+    margin-bottom: 20px;
+}
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    width: 100%;
+}
+.footer-script {
+    color: var(--var-gray-2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16);
+}
+.footer-link {
+    display: block;
+    color: var(--var-gray-3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 16);
+    text-decoration: none;
+}
+.footer-divider {
+    width: 100%;
+    border: var(--var-gray-5);
+    border-style: solid;
+    border-width: 0.5px;
+    margin-bottom: 40px;
+}
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-copyRight {
+    color: var(--var-gray-4);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(20 / 14);
+}
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 18px;
 }
 @media screen and (max-width: 767.98px) {
     body {
