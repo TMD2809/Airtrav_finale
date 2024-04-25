@@ -10,6 +10,16 @@ img {
     display: block;
     max-width: 100%;
 }
+input,
+button,
+textarea,
+select {
+    outline: none;
+    font: inherit;
+}
+button {
+    cursor: pointer;
+}
 :root {
     /*|| COLOR PALETTE */
     --var-primary-color-1: #3b71fe;
@@ -326,6 +336,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: calc(24 / 16);
+    margin-bottom: 30px;
 }
 .footer-title {
     color: var(--var-gray-2);
@@ -360,9 +371,7 @@ body {
 }
 .footer-divider {
     width: 100%;
-    border: var(--var-gray-5);
-    border-style: solid;
-    border-width: 0.5px;
+    border: 1px solid var(--var-gray-5);
     margin-bottom: 40px;
 }
 .footer-bottom {
@@ -381,6 +390,37 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 18px;
+}
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100rem;
+    border: 2px solid var(--var-gray-5);
+    padding: 8px;
+}
+.subscribe-des {
+    padding-inline: 18px;
+    width: 100%;
+    color: var(--var-gray-1);
+    font-size: 16px;
+    line-height: calc(24 / 16);
+}
+.subscribe-des::-webkit-input-placeholder {
+    color: var(--var-gray-4);
+}
+.subscribe-des::-moz-input-placeholder {
+    color: var(--var-gray-4);
+}
+.subscribe-button {
+    width: 33px;
+    height: 33px;
+    border-radius: 30px;
+    background: var(--var-primary-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 @media screen and (max-width: 767.98px) {
     body {

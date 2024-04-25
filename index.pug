@@ -47,9 +47,9 @@ html(lang="en")
                         a.footer-logo(href="#")
                             img(srcset="./Img/logo1.png 2x")
                         span.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
-                        .subscribe
-                            .subscribe-des Enter your email
-                            .subscribe-button
+                        form.subscribe
+                            input(type="email" placeHolder="Enter your email").subscribe-des
+                            button.subscribe-button(type="submit")
                                 img(src="", alt="", srcset="./Img/arrow.png")
                     .footer-content
                         h4.footer-title Services
