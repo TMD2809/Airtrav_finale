@@ -6,6 +6,10 @@
     font-size: 100%;
     vertical-align: baseline;
 }
+section,
+footer {
+    padding: 0 24px;
+}
 img {
     display: block;
     max-width: 100%;
@@ -227,6 +231,11 @@ body {
     font-size: 12px;
     line-height: calc(21 / 12);
 }
+.hiddenGem {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: #fcfcfc;
+}
 .hiddenGem .container {
     text-align: center;
 }
@@ -287,7 +296,7 @@ body {
 }
 .button {
     width: fit-content;
-    margin: 70px auto;
+    margin: 70px auto 0;
     font-size: 24px;
     color: #fff;
     line-height: calc(36 / 24);
@@ -424,7 +433,7 @@ body {
 }
 @media screen and (max-width: 767.98px) {
     body {
-        margin: 0 24px;
+        /* margin: 0 24px; */
     }
     .top-tour {
         color: #fff;
@@ -466,6 +475,9 @@ body {
     .popularThing .mainTitle {
         margin-bottom: 30px;
     }
+    .popular-list {
+        row-gap: 20px;
+    }
     .popular-item {
         width: 100%;
     }
@@ -476,12 +488,18 @@ body {
             rgba(4, 4, 4, 0) 55.52%
         );
     }
+
     .hiddenGem .mainTitle {
         margin-bottom: 20px;
     }
     .hidden-list {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+    .hidden-image {
+        height: 132px;
+        border-radius: 8.783px;
+        background: linear-gradient(9deg);
     }
     .hidden-title {
         font-size: 16px;
@@ -491,5 +509,15 @@ body {
     .hidden-time {
         font-size: 10px;
         line-height: calc(13 / 10);
+    }
+    .footer-top {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .footer-logo {
+        margin-bottom: 24px;
+    }
+    .footer-bottom {
+        flex-direction: column;
     }
 }
