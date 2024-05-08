@@ -432,9 +432,6 @@ body {
     flex-shrink: 0;
 }
 @media screen and (max-width: 767.98px) {
-    body {
-        /* margin: 0 24px; */
-    }
     .top-tour {
         color: #fff;
         font-family: Inter;

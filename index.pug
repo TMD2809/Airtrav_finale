@@ -14,65 +14,26 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap"
             rel="stylesheet")
     body
-        header 
+        include ./views/layout/header.pug
         main
-            section.topTour
-                .container
-                    h2.mainTitle Top Bangkok Tours 
-                    .tour-list
-                        +tourItem("./Img/Img1.png","$40", "Thailands Ayutthaya Temples Cruise from Bangkok",4.8, 9, 61)
-                        +tourItem("./Img/Img2.png","$60", "FLoating Markets Day Trip from Bangkok",3.8, 5, 90)
-                        +tourItem("./Img/Img3.png","$100", "Bangkok Dinner Cruise on the Chao Phraya River",4.6, 1, 50)
-            section.popularThing
-                .container
-                    h2.mainTitle Popular things to do in Bangkok
-                    .popular-list
-                        +popularItem("./Img/Grand_Palace.jpg","Sep 28 12:00 AM - 1:00 PM","The Grand Palace")
-                        +popularItem("./Img/Chatuchak-Weekend.jpg","Aug 28 1:00 AM - 19:00 PM","Chatuchak Weekend")
-                        +popularItem("./Img/Wat-Pho.jpg","Jul 28 5:00 AM - 7:00 PM","Wat Pho")
-                        +popularItem("./Img/Temple-Of-Dawn.jpg","Jan 28 10:00 AM - 1:00 PM","Temple Of Dawn")
-            section.hiddenGem
-                .container
-                    h2.mainTitle Hidden gems in Bangkok
-                    .hidden-list
-                        +hiddenItem("./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","28 Sep, 2020")
-                        +hiddenItem("./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","27 Sep, 2020")
-                        +hiddenItem("./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","7 Dec, 2020")
-                        +hiddenItem("./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg","16 Feb, 2020")
-                a.button Explore All
-        footer.footer
-            .footer-container 
-                .footer-top
-                    .footer-content
-                        a.footer-logo(href="#")
-                            img(srcset="./Img/logo1.png 2x")
-                        span.footer-desc Similarly, a loan taken out to buy a car may be secured by the car. The duration of the loan.
-                        form.subscribe
-                            input(type="email" placeHolder="Enter your email").subscribe-des
-                            button.subscribe-button(type="submit")
-                                img(src="", alt="", srcset="./Img/arrow.png")
-                    .footer-content
-                        h4.footer-title Services
-                        ul.footer-list
-                            each items in ['Trip Planner','Tour Planning','Tour Guide','Tour Package','Tour advice']
-                                li.footer-item
-                                    a.footer-link(href="#")= items
-                    .footer-content 
-                        h4.footer-title Support
-                        ul.footer-list
-                            each items in ['Account','Legal','Contact','Terms & Condition','Privacy Policy']
-                                li.footer-item
-                                    a.footer-link(href='#')= items
-                    .footer-content 
-                        h4.footer-title Business
-                        ul.footer-list
-                            each items in ['Success','About Location','Blog','Information','Travel Guide']
-                                li.footer-item
-                                    a.footer-link(href='#')= items
-                .footer-divider
-                .footer-bottom
-                    .footer-copyRight Copyright© 2021 UIHUT LLC. All rights reserved
-                    .footer-social 
-                        each logo in ["./Img/facebook.png 2x","./Img/linkdlne.png 2x" ,"./Img/twitter.png 2x","./Img/instragram.png 2x"]
-                            a.footer-social-link 
-                                img.footer-social-logo(srcset= logo)
+            include ./views/home/toptours.pug
+            include ./views/home/popularthing.pug
+            include ./views/home/hiddengem.pug
+            //- section.popularThing
+            //-     .container
+            //-         h2.mainTitle Popular things to do in Bangkok
+            //-         .popular-list
+            //-             +popularItem("./Img/Grand_Palace.jpg","Sep 28 12:00 AM - 1:00 PM","The Grand Palace")
+            //-             +popularItem("./Img/Chatuchak-Weekend.jpg","Aug 28 1:00 AM - 19:00 PM","Chatuchak Weekend")
+            //-             +popularItem("./Img/Wat-Pho.jpg","Jul 28 5:00 AM - 7:00 PM","Wat Pho")
+            //-             +popularItem("./Img/Temple-Of-Dawn.jpg","Jan 28 10:00 AM - 1:00 PM","Temple Of Dawn")
+            //- section.hiddenGem
+            //-     .container
+            //-         h2.mainTitle Hidden gems in Bangkok
+            //-         .hidden-list
+            //-             +hiddenItem("./Img/brendan-greenway-SouFaFk9-KQ-unsplash 2.png","28 Sep, 2020")
+            //-             +hiddenItem("./Img/jeremy-stewardson-mVEzfimrJoU-unsplash.jpg","27 Sep, 2020")
+            //-             +hiddenItem("./Img/giacomo-carra-pIruxANHJm0-unsplash.jpg","7 Dec, 2020")
+            //-             +hiddenItem("./Img/marijn-van-der-marel-u8gGFwzCvWw-unsplash.jpg","16 Feb, 2020")
+            //-     a.button Explore All
+        include ./views/layout/footer.pug
